@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+    <title>温冷交代浴</title><!--ブラウザのタブのタイトルを指定-->
+  </head>
+
+  <body>
+        <h1 class="bigheader-kihonhen">
+            温冷交代浴<br/>
+            熱いサウナと水風呂に交互に入る　水風呂あり、サウナ上段（90℃）</h1>
+            
+            <div class="box">
+            <img src="/assets/birk-enwald-Aue1vt5naxA-unsplash.jpg" alt=">
+            </div>
+        <div class="intro-kihonhen">
+        <ul>
+            <li>熱めのサウナに入る</li>
+            <li>8〜12分のサウナ浴後に水風呂か冷水シャワーに入り、しばらく休憩を取り、もう一度サウナ浴をする</li>
+            <li>これを2〜3回くり返す</li>
+        </ul>
+            ＊入浴後にサウナに入ると汗の出がよくなる</br>
+            ＊浴後は30分ほど安静にする
+        </div>
+
+        <div class="onnreikoutaiyoku">
+        
+          <h2 class="target">
+             対象と解説</h2>
+
+          <h3 class="kaisetsu">
+             肉体の疲労回復</h3>
+             
+             サウナに入ると血流は安静時の2倍近く亢進する。</br>
+             →酸素の摂取量が増加し、疲労物質（乳酸）が排出され、疲労回復が促進される。</br>
+             →エネルギー再生産がなされて疲労回復の効果が上がる。
+
+          <h3 class="kaisetsu">
+             肩こりや筋肉痛</h3>
+             
+             肩こりや筋肉痛の原因は、主に筋肉の過度の緊張や血流の不足である。</br>
+             サウナ浴をすると血行がよくなり、筋肉内を循環する血流量が増え、汗とともに疲労物質（乳酸）が排出されるので、肩こり・腰痛などの神経感覚的症状が改善される。
+
+          <h3 class="kaisetsu">
+             血圧に悩む人</h3>
+
+             反復的効果：サウナと冷水の交代浴で、血圧を正常に戻す。高血圧症の人のサウナ入浴には注意が必要。</br>
+             一時的効果：入浴の直後は一時的に血圧が上昇しますが、その後血管の拡張によって最高血圧・最低血圧ともに低下する。しかし、入浴後は次第に普段の血圧に戻る。
+
+          <h3 class="kaisetsu">
+             鬱傾向や活力不足（自律神経失調）</h3>
+
+             温冷交代浴は、生活習慣病を持った人にはすすめられないが、自らの自然治癒力を活かし、交感神経（自律神経）の働きを活発にして、生理機能を高めてくれる効果がある。
+
+          <h3 class="kaisetsu">
+             美容のため</h3>
+
+             高温のサウナに入ると、皮膚血管はまず収縮する。それから体温の上昇に伴って拡がる。血管調節の働きをよくして、皮膚の生理機能を活発にすることが美肌づくりのコツ。
+             
+        </div>
+
+        
+        <%= link_to "トップに戻る", saunas_top_path %>
+
+        <input id="copyTarget" type="text" value="あとで入れる" readonly>
+        <button onclick="copyToClipboard()">Copy URL</button>
+
+        <script>
+        function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+            // コピーをお知らせする
+            alert("コピーできました！ : " + copyTarget.value);
+        }
+    </script>
+  </body>
+</html>

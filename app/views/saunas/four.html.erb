@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+    <title>高温短時間浴</title><!--ブラウザのタブのタイトルを指定-->
+  </head>
+
+  <body>
+        <h1 class="bigheader-kihonhen">
+            高温短時間浴<br/>
+            熱いサウナに短時間入浴する　水風呂なし、サウナ上段（90℃）</h1>
+
+            <div class="box">
+            <img src="/assets/bench-6761315_1280.jpg" alt=">
+            </div>
+        <div class="intro-kihonhen">
+        <ul>
+            <li>サウナには、シャワーを浴びてから入る</li>
+            <li>8分程度</li>
+        </ul>
+        </div>
+
+        <div class="kouonntannjikannyoku">
+
+          <h2 class="target">
+             対象と解説</h2>
+
+          <h3 class="kaisetsu">
+             神経・感覚的疲労（肩こり・腰痛・声のかすれ、まぶたのけいれんなど）が溜まり、身体的症状がある。（交感神経優位・過緊張）</h3>
+
+             過緊張状態の場合、低温浴でリラックスして副交感神経優位状態にする方法もあるが、体力のある方は、高温短時間浴で交感神経をさらに高ぶらせ、</br>
+             荒治療的にバランスを取る方法もある。</br>
+             急に熱いサウナに入ると鳥肌反応が起きますが、こうした皮膚への温度刺激が訓練になり、自らの神経調節機能力を高める。</br>
+             回復しにくい神経・感覚的疲労を、自らの抵抗力を高めることによって回復させようというのが、この入浴法のねらいである。
+
+        </div>
+
+
+
+        <%= link_to "トップに戻る", saunas_top_path %>
+
+        <input id="copyTarget" type="text" value="あとで入れる" readonly>
+        <button onclick="copyToClipboard()">Copy URL</button>
+
+        <script>
+        function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+            // コピーをお知らせする
+            alert("コピーできました！ : " + copyTarget.value);
+        }
+    </script>
+  </body>
+</html>

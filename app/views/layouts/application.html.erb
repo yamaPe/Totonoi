@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Totonoi</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header>
+    <h2>Totonoi</h2>
+    <div class="header-list">
+    <ul>
+      <li><%= link_to "トップページ", saunas_top_path %></li>
+      <li><%= link_to "温冷交代浴", saunas_one_path %></li>
+      <li><%= link_to "低温浴", saunas_two_path %></li>
+      <li><%= link_to "くりかえし浴", saunas_three_path %></li>
+      <li><%= link_to "高温短時間浴", saunas_four_path %></li>
+    </ul>
+    </div>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+
+  </body>
+</html>

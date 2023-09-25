@@ -1,0 +1,17 @@
+.box{
+  position: relative;
+}
+
+.main{
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 0;
+  left: 0;
+}
+
+.box img{
+  width: 100%;
+    }
+.intro-kihonhen{
+  margin: 5% auto;
+}

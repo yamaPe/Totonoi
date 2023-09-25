@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+    <title>低温浴</title><!--ブラウザのタブのタイトルを指定-->
+  </head>
+
+  <body>
+        <h1 class="bigheader-kihonhen">
+            低温浴<br/>
+            低い温度のサウナにゆっくり入る　水風呂なし、サウナ下段（70℃前後）</h1>
+
+            <div class="box">
+            <img src="/assets/huum-bdkQFJYFNK4-unsplash.jpg" alt=">
+            </div>
+        <div class="intro-kihonhen">
+        <ul>
+            <li>サウナ室の低いところの座り、リラックスして長時間（自分にあった時間、15分〜20分程度）入浴する</li>
+            <li>サウナから出たら足に2〜3杯の水をかけ、湯冷めしないように注意して、20〜30分安静にする。</li>
+        </ul>
+        </div>
+
+        <div class="teionnyoku">
+
+          <h2 class="target">
+             対象と解説</h2>
+
+          <h3 class="kaisetsu">
+             不眠症、気疲れ・ストレスが溜まっている人、熱いサウナや水風呂に抵抗のある人や持病で入れない人</h3>
+
+             低温サウナにゆっくり入ると、神経を静め、緊張を解く鎮静作用が働く。</br>
+             活動的な昼のリズムから休息のリズムへの自然な転換がはかれ、快適な睡眠に役立てることができる。
+
+        </div>
+
+
+
+        <%= link_to "トップに戻る", saunas_top_path %>
+
+        <input id="copyTarget" type="text" value="あとで入れる" readonly>
+        <button onclick="copyToClipboard()">Copy URL</button>
+
+        <script>
+        function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+            // コピーをお知らせする
+            alert("コピーできました！ : " + copyTarget.value);
+        }
+    </script>
+  </body>
+</html>

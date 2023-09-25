@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+  <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+    <meta charset="utf-8">
+    <title>ととのい</title><!--ブラウザのタブのタイトルを指定-->
+    <%= stylesheet_link_tag 'top', :media => "all" %>
+  </head>
+
+  <body>
+    <div class="box">
+        <img src="/assets/huum-Ruso6EXMC5U-unsplash-2.jpg" alt=">
+        <h1 class="main">
+          サウナの入り方を知ろう</h1>
+    </div>
+        <div class="intro-kihonhen">
+        <h2>こういった方におすすめ・・・</h2>
+        肉体の疲労回復</br>
+        肩こりや筋肉痛</br>
+        血圧に悩む人</br>
+        鬱傾向や活力不足（自律神経失調）</br>
+        美容のため</br>
+        そんな方には温冷交代浴がおすすめ！！
+        <%= link_to "詳しくはこちら", saunas_one_path %>
+        </div>
+
+        <div class="intro-kihonhen">
+        不眠症</br>
+        気疲れ・ストレスが溜まっている人</br>
+        熱いサウナや水風呂に抵抗のある人</br>
+        持病で入れない人</br>
+        そんな方には低温浴がおすすめ！！
+        <%= link_to "詳しくはこちら", saunas_two_path %>
+        </div>
+
+        <div class="intro-kihonhen">
+        ダイエット</br>
+        落汗減量</br>
+        肥満</br>
+        そんな方にはくりかえし浴がおすすめ！！
+        <%= link_to "詳しくはこちら", saunas_three_path %>
+        </div>
+        
+        <div class="intro-kihonhen">
+        神経・感覚的疲労</br>
+        肩こり・腰痛・声のかすれ、まぶたのけいれんなど</br>
+        交感神経優位・過緊張</br>
+        そんな方には高温短時間浴がおすすめ！！
+        <%= link_to "詳しくはこちら", saunas_four_path %>
+        </div>
+  </body>
+</html>
