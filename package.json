@@ -8,8 +8,8 @@
     "@rails/activestorage": "^7.0.8",
     "@rails/ujs": "^7.0.8",
     "@rails/webpacker": "5.4.4",
-    "chokidar": "^3.5.3",
-    "fsevents": "^2.3.3",
+    "chokidar": "^2.1.8",
+    "fsevents": "^1.2.13",
     "turbolinks": "^5.2.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
