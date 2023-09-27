@@ -1,12 +1,13 @@
 .box{
+  display: flex;
   position: relative;
 }
 
-.box img{
+.box hoge{
   width: 100%;
     }
 
-.main{
+h1 main{
   color: white;/*文字は白に*/
 }
 
